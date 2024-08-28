@@ -142,10 +142,10 @@ p{
   }
   
   .divfo, .divfo1{
-    display: flex;        /* Alinea el contenido dentro de cada div */
-    align-items: center;  /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    text-align: center;   /* Asegura que el texto esté centrado */
+    display: flex;       
+    align-items: center;  
+    justify-content: center; 
+    text-align: center; 
   }
   
   .buarg{
@@ -160,49 +160,68 @@ p{
     align-items: center;   
   }
   .fo2 {
-    display: flex;          /* Alinea los divs hijos en una fila */
-    justify-content: space-between; /* Distribuye espacio equitativamente entre los divs */
-    align-items: flex-start; /* Alinea los divs al principio del contenedor */
-    padding: 20px;          /* Espacio interno del footer */
-    background-color: black; /* Color de fondo del footer */
-    color: white;           /* Color del texto */
+    display: flex;        
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;          
+    background-color: black;
+    color: white;           
   }
   
-  .boxfo1, .boxfo2, .boxfo3, .boxfo4 {
-    flex: 1;                /* Cada div ocupa el mismo espacio horizontal */
-    margin: 0 10px;         /* Margen entre los divs */
-  }
+.boxfo1{
+    flex: 1;              
+    margin: 0 60px;        
+}
+.boxfo2{
+  flex: 1;
+}
+.boxfo3{
+  flex: 1;
+}
+
+.boxfo4 {
+    flex: 1;
+    margin-left: 60px;      
+}
+
   
   ul {
-    list-style: none;       /* Quita los puntos de las listas */
-    padding: 0;             /* Quita el padding interno de las listas */
-    margin: 0;              /* Quita el margen de las listas */
+    list-style: none;      
+    padding: 0;             
+    margin: 0;             
+    
   }
-
+  
   ul li{
     font-weight: bold;
   }
   
   li a {
-    color: white;           /* Color del texto de los enlaces */
-    text-decoration: none;  /* Quita el subrayado de los enlaces */
-    display: block;         /* Los enlaces ocupan toda la anchura disponible */
-    padding: 5px 0;         /* Espaciado vertical en los enlaces */
+    color: white;           
+    text-decoration: none;  
+    display: block;         
+    padding: 5px 0;         
   }
   
   li a:hover {
-    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+    text-decoration: underline; 
   }
   
   .boxfo4 {
-    display: flex;          /* Alinea los íconos en fila */
-    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    display: flex;          
+    justify-content: flex-end; 
   }
   
   .social-icon {
-    margin: 0 5px;          /* Espaciado horizontal entre íconos */
-    color: white;           /* Color de los íconos */
-    font-size: 24px;        /* Tamaño de los íconos */
+    margin: 0 5px;        
+    color: white;          
+    font-size: 24px;        
+    
+  }
+  #accs{
+    padding-top: 120px;
+    padding-right: 60px;
+    margin-right: auto;
     
   }
   .fo3{
@@ -215,6 +234,14 @@ p{
     font-size: smaller;
     text-align: right;
   }
- 
+  .hrdiv{
+    height: 2px;
+    width: 50%;
+    border-top: 1px solid rgba(194, 194, 194, 0.274);
+    margin: 200px black;
+  }
+  #linea{
+    width: 50%;
+  }
 
   
