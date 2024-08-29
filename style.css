@@ -8,6 +8,73 @@ h1{
     padding-top: 100px;
     padding-bottom: 30px;
 }
+
+/* Contenedor principal del ticker */
+.ticker {
+  width: 100%;
+  height: 60px;
+  padding-top: 7px;
+  overflow: hidden; 
+  background-color: red; 
+  white-space: nowrap;
+  position: relative; 
+}
+
+/* Contenedor del contenido del ticker */
+.ticker__content {
+  display: inline-block; 
+  animation: scroll-left 50s linear infinite; 
+}
+
+/* Cada ítem del ticker */
+.ticker__item {
+  display: inline-block; 
+  margin-right: 50px; 
+  font-size: 30px; 
+  font-weight: bold; 
+  color: rgb(0, 0, 0); 
+}
+.ticker__item::after {
+  content: '•'; 
+  color: rgb(0, 0, 0); 
+  font-size: 30px; 
+  margin-left: 20px;
+  position: absolute; 
+  top: 40%; 
+  transform: translateY(-50%); 
+}
+
+.ticker__button {
+  position: absolute;
+  right: 10px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  padding: 5px; 
+}
+
+.ticker__button:hover{
+  background-color: rgba(128, 128, 128, 0.952);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-40%); 
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
 .divimg{
     background-color: rgba(194, 194, 194, 0.274);
     height: 1050px;
@@ -243,5 +310,65 @@ p{
   #linea{
     width: 50%;
   }
+  @media (max-width: 1200px) {
+    .divid1, .divid2 {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        padding: 30px;
+    }
 
+    .boxfo4 {
+        justify-content: center; /* Centra los íconos sociales en pantallas más pequeñas */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divb {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .foo1, .fo2, .fo3 {
+        flex-direction: column; /* Cambia a columna para el footer */
+        gap: 20px;
+    }
+
+    .boxnav img {
+        width: 150px; /* Ajusta el tamaño del logo en pantallas más pequeñas */
+    }
+
+    .box1, .box2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .divimg, .divimg2 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .redes {
+        font-size: 18px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+        padding: 10px;
+    }
+
+    .box3 {
+        width: 90%; /* Ajusta el tamaño de la caja en pantallas muy pequeñas */
+    }
+
+    .divfo, .divfo1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxfo1, .boxfo2, .boxfo3 {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .social-icon {
+        font-size: 20px; /* Ajusta el tamaño de los íconos sociales */
+    }
+}
   
