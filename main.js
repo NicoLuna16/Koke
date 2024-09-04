@@ -1,5 +1,5 @@
 
-  // Variable para rastrear el estado de la animación
+ 
   let isPaused = false;
 
   function toggleAnimation() {
@@ -20,5 +20,5 @@
     isPaused = !isPaused;
   }
 
-  // Asigna la función al botón
+
   document.getElementById('toggleButton').addEventListener('click', toggleAnimation);
